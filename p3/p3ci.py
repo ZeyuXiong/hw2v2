@@ -17,6 +17,7 @@ x = np.cos(j*np.pi/N)
 An=chebcoeffs(f(x))
 '''
 
+#try different N's
 print(timeit.timeit(setup1+'''N = 8'''+setup2, number = 10))
 print(timeit.timeit(setup1+'''N = 2**13-1'''+setup2, number = 10))
 print(timeit.timeit(setup1+'''N = 2**13'''+setup2, number = 10))
